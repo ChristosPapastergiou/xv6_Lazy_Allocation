@@ -6,9 +6,12 @@ This technique is the Lazy allocation
 
 # Package needed
 
-  sudo apt install git build essential gdb multiarch qemu system
-  misc gcc riscv64 linux gnu binutils riscv64 linux gnu
+In order to be able to use the xv6 Unix OS you need to have the qemu. QEMU is a virtualization and emulation tool that allows you to run operating systems and software on a host system that is different from the one for which the software was originally designed.
+
+    sudo apt install git build-essential gdb-multiarch qemu-system-misc gcc-riscv64-linux-gnu binutils-riscv64-linux-gnu
 
 # Compilation & Run
 
-In order to be able to use the xv6 
+    compile : make
+    compile & entering simulation environment : make qemu
+    compile & grading : make grade
